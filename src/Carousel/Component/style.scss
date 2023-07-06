@@ -1,0 +1,126 @@
+.ViewMainCarousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+        margin: 0;
+    }
+
+    .GroupCarousel {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .CarouselCustom {
+        padding-bottom: 30px;
+        padding-left: 10px;
+    }
+
+    .ContainerItemCarousel {
+        text-decoration: none;
+    }
+
+    .ItemCarousel {
+        border: 1px solid #c7d7fe;
+        border-radius: 10px;
+        max-width: 220px;
+
+        .GroupImage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 10px;
+            position: relative;
+
+            img {
+                height: 100px;
+            }
+
+            .GroupDescuento {
+                padding: 0 5px;
+                position: absolute;
+                top: 30px;
+                left: 0;
+                background-color: rgb(68, 57, 145);
+                color: white;
+                font-size: 14px;
+            }
+        }
+
+        .GroupTextDetail {
+            border-top: 1px solid #c7d7fe;
+            padding: 15px 10px;
+
+            .TextProveedor {
+                font-size: 10px;
+                font-weight: 500;
+                color: #a9a9a9;
+            }
+            .TextDescripcion {
+                color: #221c35;
+                font-size: 14px;
+            }
+
+            .GroupDetailBottom {
+                height: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                p {
+                    font-size: 13px;
+                    color: #667085;
+                }
+
+                .TextPriceDescuento {
+                    font-size: 20px;
+                    color: #cc0046;
+                }
+            }
+        }
+    }
+
+    .ItemCarousel:hover {
+        background-color: rgb(251, 251, 251);
+        transition: 1s;
+        cursor: pointer;
+
+        .GroupImage {
+            img {
+                transition: 1s;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .react-multi-carousel-dot-list  {
+        bottom: 3px;
+
+        .react-multi-carousel-dot button {
+            height: 8px;
+            width: 24px;
+            border-radius: 2px;
+            border: none;
+        } 
+        
+        .react-multi-carousel-dot--active button {
+            background: #e0004d;
+        }
+    }
+
+    .react-multiple-carousel__arrow--right {
+        right: 0;
+    }
+
+    .react-multiple-carousel__arrow--left {
+        left: 0;
+    }
+
+    @media (max-width: 1200px) {
+        .ItemCarouselCustom {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
